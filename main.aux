@@ -228,6 +228,8 @@
 \newlabel{eq:snr}{{2.28}{30}{Formal degradation model}{equation.2.28}{}}
 \citation{marvel1999spread}
 \citation{gonzalez2008digital}
+\citation{cox2007digital}
+\citation{wengrowski2019light}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Illustrative bit error rate (BER) as a function of JPEG quality factor for four embedding domains. Spatial LSB embedding is almost entirely destroyed below QF\,=\,90, while transform-domain methods show substantially better survival. The dotted line marks the $5\%$ BER threshold below which error correction coding can typically achieve full recovery. Curves are representative of trends reported in the literature \cite  {cox2007digital, petitcolas1999information}.}}{31}{figure.2.11}\protected@file@percent }
 \newlabel{fig:jpeg_ber}{{2.11}{31}{Illustrative bit error rate (BER) as a function of JPEG quality factor for four embedding domains. Spatial LSB embedding is almost entirely destroyed below QF\,=\,90, while transform-domain methods show substantially better survival. The dotted line marks the $5\%$ BER threshold below which error correction coding can typically achieve full recovery. Curves are representative of trends reported in the literature \cite {cox2007digital, petitcolas1999information}}{figure.2.11}{}}
 \@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{31}{equation.2.28}\protected@file@percent }
@@ -235,62 +237,61 @@
 \@writefile{toc}{\contentsline {subsubsection}{Filtering Attacks}{31}{equation.2.29}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{31}{equation.2.29}\protected@file@percent }
 \newlabel{eq:lpf}{{2.30}{31}{Formal degradation model}{equation.2.30}{}}
-\newlabel{eq:gaussian_kernel}{{2.31}{31}{Formal degradation model}{equation.2.31}{}}
-\citation{cox2007digital}
-\citation{wengrowski2019light}
+\newlabel{eq:lpf_freq}{{2.31}{31}{Formal degradation model}{equation.2.31}{}}
 \citation{ruanaidh1998rotation}
 \citation{cox2007digital}
-\newlabel{eq:lpf_freq}{{2.32}{32}{Formal degradation model}{equation.2.32}{}}
-\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{32}{equation.2.32}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{32}{equation.2.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{32}{equation.2.31}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Geometric Attacks}{32}{subsection.2.5.2}\protected@file@percent }
 \newlabel{subsec:geometric_attacks}{{2.5.2}{32}{Geometric Attacks}{subsection.2.5.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Cropping}{32}{subsection.2.5.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{32}{subsection.2.5.2}\protected@file@percent }
-\newlabel{eq:crop}{{2.33}{32}{Formal degradation model}{equation.2.33}{}}
-\newlabel{eq:crop_fraction}{{2.34}{32}{Formal degradation model}{equation.2.34}{}}
-\newlabel{eq:crop_fragments}{{2.35}{33}{Formal degradation model}{equation.2.35}{}}
-\@writefile{toc}{\contentsline {paragraph}{Synchronisation effect.}{33}{equation.2.35}\protected@file@percent }
+\newlabel{eq:crop}{{2.32}{32}{Formal degradation model}{equation.2.32}{}}
+\newlabel{eq:crop_fraction}{{2.33}{32}{Formal degradation model}{equation.2.33}{}}
+\newlabel{eq:crop_fragments}{{2.34}{32}{Formal degradation model}{equation.2.34}{}}
+\@writefile{toc}{\contentsline {paragraph}{Synchronisation effect.}{32}{equation.2.34}\protected@file@percent }
+\citation{gonzalez2008digital}
+\citation{marvel1999spread}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Effect of cropping on block-based DCT embedding. Column~0 (shaded red, left) is removed by the crop. Because the extractor anchors its $8\times 8$ block grid to the top-left corner of the received image, the entire grid shifts by one block position. The extractor reads coefficients from the wrong blocks (marked~?), even though the embedded blocks~E were not themselves removed. This synchronisation failure produces a near-random BER regardless of the signal-level embedding quality.}}{33}{figure.2.12}\protected@file@percent }
 \newlabel{fig:crop_misalignment}{{2.12}{33}{Effect of cropping on block-based DCT embedding. Column~0 (shaded red, left) is removed by the crop. Because the extractor anchors its $8\times 8$ block grid to the top-left corner of the received image, the entire grid shifts by one block position. The extractor reads coefficients from the wrong blocks (marked~?), even though the embedded blocks~E were not themselves removed. This synchronisation failure produces a near-random BER regardless of the signal-level embedding quality}{figure.2.12}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Resizing and Resampling}{33}{figure.2.12}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{33}{figure.2.12}\protected@file@percent }
-\newlabel{eq:resize}{{2.36}{33}{Formal degradation model}{equation.2.36}{}}
-\citation{gonzalez2008digital}
-\citation{marvel1999spread}
+\newlabel{eq:resize}{{2.35}{33}{Formal degradation model}{equation.2.35}{}}
+\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{33}{equation.2.35}\protected@file@percent }
 \citation{bracewell2000fourier}
 \citation{ruanaidh1998rotation}
 \citation{kutter1999digital}
 \citation{cox2007digital}
 \citation{petitcolas1999information}
+\citation{jia2021mbrs}
+\citation{wengrowski2019light}
+\citation{petitcolas1999information}
+\citation{jia2021mbrs}
+\citation{wengrowski2019light}
+\citation{petitcolas1999information}
+\@writefile{toc}{\contentsline {subsubsection}{Rotation}{34}{equation.2.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{34}{equation.2.35}\protected@file@percent }
+\newlabel{eq:rotation}{{2.36}{34}{Formal degradation model}{equation.2.36}{}}
 \@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{34}{equation.2.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Rotation}{34}{equation.2.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{34}{equation.2.36}\protected@file@percent }
-\newlabel{eq:rotation}{{2.37}{34}{Formal degradation model}{equation.2.37}{}}
-\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{34}{equation.2.37}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Affine and Projective Transformations}{34}{equation.2.37}\protected@file@percent }
-\newlabel{eq:affine}{{2.38}{34}{Affine and Projective Transformations}{equation.2.38}{}}
-\citation{jia2021mbrs}
-\citation{wengrowski2019light}
-\citation{petitcolas1999information}
-\citation{jia2021mbrs}
-\citation{wengrowski2019light}
-\citation{petitcolas1999information}
+\@writefile{toc}{\contentsline {subsubsection}{Affine and Projective Transformations}{34}{equation.2.36}\protected@file@percent }
+\newlabel{eq:affine}{{2.37}{34}{Affine and Projective Transformations}{equation.2.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Compound and Pipeline Attacks}{34}{subsection.2.5.3}\protected@file@percent }
+\newlabel{subsec:compound_attacks}{{2.5.3}{34}{Compound and Pipeline Attacks}{subsection.2.5.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Social media processing pipelines.}{34}{subsection.2.5.3}\protected@file@percent }
 \citation{jia2021mbrs}
 \citation{cox2007digital}
 \citation{Fridrich2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Compound and Pipeline Attacks}{35}{subsection.2.5.3}\protected@file@percent }
-\newlabel{subsec:compound_attacks}{{2.5.3}{35}{Compound and Pipeline Attacks}{subsection.2.5.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{Social media processing pipelines.}{35}{subsection.2.5.3}\protected@file@percent }
+\citation{Fridrich2012}
+\citation{fridrich2004attacks}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Documented image processing operations applied by major social media and messaging platforms to uploaded images. The combination of these operations constitutes a compound attack on embedded steganographic payloads. QF: JPEG quality factor. Information compiled from \cite  {jia2021mbrs, wengrowski2019light, petitcolas1999information}.}}{35}{table.2.2}\protected@file@percent }
 \newlabel{tab:platform_pipelines}{{2.2}{35}{Documented image processing operations applied by major social media and messaging platforms to uploaded images. The combination of these operations constitutes a compound attack on embedded steganographic payloads. QF: JPEG quality factor. Information compiled from \cite {jia2021mbrs, wengrowski2019light, petitcolas1999information}}{table.2.2}{}}
 \@writefile{toc}{\contentsline {paragraph}{Formal compound degradation model.}{35}{table.2.2}\protected@file@percent }
-\newlabel{eq:compound}{{2.39}{35}{Formal compound degradation model}{equation.2.39}{}}
-\@writefile{toc}{\contentsline {paragraph}{Empirical impact.}{35}{equation.2.39}\protected@file@percent }
+\newlabel{eq:compound}{{2.38}{35}{Formal compound degradation model}{equation.2.38}{}}
+\@writefile{toc}{\contentsline {paragraph}{Empirical impact.}{35}{equation.2.38}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces A typical social media compound attack pipeline applied to a stego-image. Each stage introduces a distinct type of degradation: resizing causes block misalignment and acts as a low-pass filter; JPEG recompression introduces quantisation error in DCT coefficients; format conversion may introduce additional colour-space transformations. The cumulative effect is far more destructive than any single attack alone.}}{35}{figure.2.13}\protected@file@percent }
 \newlabel{fig:compound_pipeline}{{2.13}{35}{A typical social media compound attack pipeline applied to a stego-image. Each stage introduces a distinct type of degradation: resizing causes block misalignment and acts as a low-pass filter; JPEG recompression introduces quantisation error in DCT coefficients; format conversion may introduce additional colour-space transformations. The cumulative effect is far more destructive than any single attack alone}{figure.2.13}{}}
-\citation{Fridrich2012}
-\citation{fridrich2004attacks}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Steganalytic Attacks}{35}{subsection.2.5.4}\protected@file@percent }
+\newlabel{subsec:attack_steganalysis}{{2.5.4}{35}{Steganalytic Attacks}{subsection.2.5.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Statistical Detection Principles}{35}{subsection.2.5.4}\protected@file@percent }
 \citation{westfeld2001f5}
 \citation{provos2003hide}
 \citation{Fridrich2012}
@@ -298,16 +299,13 @@
 \citation{xu2016structural}
 \citation{yedroudj2018yenet}
 \citation{Fridrich2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Steganalytic Attacks}{36}{subsection.2.5.4}\protected@file@percent }
-\newlabel{subsec:attack_steganalysis}{{2.5.4}{36}{Steganalytic Attacks}{subsection.2.5.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Statistical Detection Principles}{36}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Classical steganalysis: targeted detectors.}{36}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Universal steganalysis.}{36}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Deep learning steganalysis.}{36}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Implications for Robustness-Oriented Design}{36}{subsection.2.5.4}\protected@file@percent }
-\newlabel{eq:detectability_tradeoff}{{2.40}{36}{Implications for Robustness-Oriented Design}{equation.2.40}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{37}{subsection.2.5.5}\protected@file@percent }
-\newlabel{subsec:attack_summary}{{2.5.5}{37}{Unified Attack Summary and Implications for Framework Design}{subsection.2.5.5}{}}
+\newlabel{eq:detectability_tradeoff}{{2.39}{36}{Implications for Robustness-Oriented Design}{equation.2.39}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{36}{subsection.2.5.5}\protected@file@percent }
+\newlabel{subsec:attack_summary}{{2.5.5}{36}{Unified Attack Summary and Implications for Framework Design}{subsection.2.5.5}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Unified summary of attack types, degradation mechanisms, failure modes, and implications for the proposed self-recovering framework. BER: Bit Error Rate; ECC: Error Correction Code; SS: Spread Spectrum; PRR: Partial Recovery Rate.}}{37}{table.2.3}\protected@file@percent }
 \newlabel{tab:attack_summary}{{2.3}{37}{Unified summary of attack types, degradation mechanisms, failure modes, and implications for the proposed self-recovering framework. BER: Bit Error Rate; ECC: Error Correction Code; SS: Spread Spectrum; PRR: Partial Recovery Rate}{table.2.3}{}}
 \citation{cox2007digital}
@@ -330,9 +328,9 @@
 \citation{zhu2018hidden}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7.1}The Shift Toward End-to-End Learned Steganography}{40}{subsection.2.7.1}\protected@file@percent }
 \newlabel{subsec:dl_shift}{{2.7.1}{40}{The Shift Toward End-to-End Learned Steganography}{subsection.2.7.1}{}}
-\newlabel{eq:encoder}{{2.41}{40}{The Shift Toward End-to-End Learned Steganography}{equation.2.41}{}}
-\newlabel{eq:decoder}{{2.42}{40}{The Shift Toward End-to-End Learned Steganography}{equation.2.42}{}}
-\newlabel{eq:loss}{{2.43}{40}{The Shift Toward End-to-End Learned Steganography}{equation.2.43}{}}
+\newlabel{eq:encoder}{{2.40}{40}{The Shift Toward End-to-End Learned Steganography}{equation.2.40}{}}
+\newlabel{eq:decoder}{{2.41}{40}{The Shift Toward End-to-End Learned Steganography}{equation.2.41}{}}
+\newlabel{eq:loss}{{2.42}{40}{The Shift Toward End-to-End Learned Steganography}{equation.2.42}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7.2}HiDDeN: The Foundational Framework (2018)}{40}{subsection.2.7.2}\protected@file@percent }
 \newlabel{subsec:hidden}{{2.7.2}{40}{HiDDeN: The Foundational Framework (2018)}{subsection.2.7.2}{}}
 \@writefile{toc}{\contentsline {paragraph}{Architecture.}{40}{subsection.2.7.2}\protected@file@percent }
@@ -406,18 +404,18 @@
 \citation{cox2007digital}
 \citation{wang2004image}
 \@writefile{toc}{\contentsline {subsubsection}{Mean Squared Error (MSE)}{47}{subsection.2.8.1}\protected@file@percent }
-\newlabel{eq:mse}{{2.44}{47}{Mean Squared Error (MSE)}{equation.2.44}{}}
-\newlabel{eq:mse_colour}{{2.45}{47}{Mean Squared Error (MSE)}{equation.2.45}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Peak Signal-to-Noise Ratio (PSNR)}{47}{equation.2.45}\protected@file@percent }
-\newlabel{eq:psnr}{{2.46}{47}{Peak Signal-to-Noise Ratio (PSNR)}{equation.2.46}{}}
-\@writefile{toc}{\contentsline {paragraph}{Interpretation and thresholds.}{47}{equation.2.46}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Limitations.}{47}{equation.2.46}\protected@file@percent }
+\newlabel{eq:mse}{{2.43}{47}{Mean Squared Error (MSE)}{equation.2.43}{}}
+\newlabel{eq:mse_colour}{{2.44}{47}{Mean Squared Error (MSE)}{equation.2.44}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Peak Signal-to-Noise Ratio (PSNR)}{47}{equation.2.44}\protected@file@percent }
+\newlabel{eq:psnr}{{2.45}{47}{Peak Signal-to-Noise Ratio (PSNR)}{equation.2.45}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation and thresholds.}{47}{equation.2.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{47}{equation.2.45}\protected@file@percent }
 \citation{wang2004image}
 \citation{wang2004image}
-\@writefile{toc}{\contentsline {paragraph}{Relationship between PSNR and embedding capacity.}{48}{equation.2.46}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Structural Similarity Index Measure (SSIM)}{48}{equation.2.46}\protected@file@percent }
-\newlabel{eq:ssim}{{2.47}{48}{Structural Similarity Index Measure (SSIM)}{equation.2.47}{}}
-\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{48}{equation.2.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Relationship between PSNR and embedding capacity.}{48}{equation.2.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Structural Similarity Index Measure (SSIM)}{48}{equation.2.45}\protected@file@percent }
+\newlabel{eq:ssim}{{2.46}{48}{Structural Similarity Index Measure (SSIM)}{equation.2.46}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{48}{equation.2.46}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Relationship Between Imperceptibility Metrics}{48}{figure.2.16}\protected@file@percent }
 \citation{proakis2008digital}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Illustrative relationship between embedding strength $\alpha $ and the two imperceptibility metrics PSNR and SSIM (scaled by $50$). Both metrics decrease monotonically with increasing embedding strength. PSNR degrades rapidly even at moderate strengths, while SSIM is more tolerant of small-amplitude, high-frequency embedding signals that preserve structural content. This highlights the complementary nature of the two metrics.}}{49}{figure.2.16}\protected@file@percent }
@@ -425,19 +423,19 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.8.2}Robustness Metrics}{49}{subsection.2.8.2}\protected@file@percent }
 \newlabel{subsec:robustness_metrics}{{2.8.2}{49}{Robustness Metrics}{subsection.2.8.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Bit Error Rate (BER)}{49}{subsection.2.8.2}\protected@file@percent }
-\newlabel{eq:ber}{{2.48}{49}{Bit Error Rate (BER)}{equation.2.48}{}}
-\@writefile{toc}{\contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.48}\protected@file@percent }
+\newlabel{eq:ber}{{2.47}{49}{Bit Error Rate (BER)}{equation.2.47}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.47}\protected@file@percent }
 \citation{cox2007digital}
-\@writefile{toc}{\contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.48}\protected@file@percent }
-\newlabel{eq:ber_ecc}{{2.49}{50}{Relationship to error correction coding}{equation.2.49}{}}
-\@writefile{toc}{\contentsline {paragraph}{BER under partial data loss.}{50}{equation.2.49}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Normalised Correlation (NC)}{50}{equation.2.49}\protected@file@percent }
-\newlabel{eq:nc}{{2.50}{50}{Normalised Correlation (NC)}{equation.2.50}{}}
-\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{50}{equation.2.50}\protected@file@percent }
-\newlabel{eq:nc_ber_relationship}{{2.51}{50}{Interpretation}{equation.2.51}{}}
+\@writefile{toc}{\contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.47}\protected@file@percent }
+\newlabel{eq:ber_ecc}{{2.48}{50}{Relationship to error correction coding}{equation.2.48}{}}
+\@writefile{toc}{\contentsline {paragraph}{BER under partial data loss.}{50}{equation.2.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Normalised Correlation (NC)}{50}{equation.2.48}\protected@file@percent }
+\newlabel{eq:nc}{{2.49}{50}{Normalised Correlation (NC)}{equation.2.49}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{50}{equation.2.49}\protected@file@percent }
+\newlabel{eq:nc_ber_relationship}{{2.50}{50}{Interpretation}{equation.2.50}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.8.3}Partial Recovery Rate (PRR)}{51}{subsection.2.8.3}\protected@file@percent }
 \newlabel{subsec:prr}{{2.8.3}{51}{Partial Recovery Rate (PRR)}{subsection.2.8.3}{}}
-\newlabel{eq:prr}{{2.52}{51}{Partial Recovery Rate (PRR)}{equation.2.52}{}}
+\newlabel{eq:prr}{{2.51}{51}{Partial Recovery Rate (PRR)}{equation.2.51}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.8.4}Unified View of Evaluation Criteria}{51}{subsection.2.8.4}\protected@file@percent }
 \newlabel{subsec:unified_view}{{2.8.4}{51}{Unified View of Evaluation Criteria}{subsection.2.8.4}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Relationship between the three steganographic objectives and the quantitative evaluation metrics used in this thesis. The trade-offs between objectives are captured by tracking all metrics simultaneously across experimental conditions. PRR (Partial Recovery Rate) is a metric introduced in this work to assess the unique partial-recovery capability of the proposed framework.}}{51}{figure.2.17}\protected@file@percent }

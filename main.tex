@@ -1268,7 +1268,7 @@
 	This section presents a comprehensive formal treatment of image attacks relevant to robust
 	steganography. Each attack is characterised by a mathematical degradation model, its effect on
 	different embedding domains, and the specific failure mode it introduces in steganographic
-	extraction.
+	extraction. 
 	
 	% ----------------------------------------------------------
 	\subsection{Signal Processing Attacks}
@@ -1465,49 +1465,46 @@
 	
 	\subsubsection{Filtering Attacks}
 	
-	Filtering attacks apply a linear or non-linear convolution kernel to the image, altering the
-	spatial frequency content. Common instances include Gaussian blurring, median filtering, and
-	sharpening filters \cite{gonzalez2008digital}.
+	Filtering attacks apply a convolution kernel to the image, modifying 
+	its spatial frequency content. Common examples include Gaussian 
+	blurring, median filtering, and sharpening filters \cite{gonzalez2008digital}.
 	
 	\paragraph{Formal degradation model.}
-	A linear low-pass filter applies a convolution:
-	
+	A low-pass filter replaces each pixel with a weighted average of 
+	its neighbours via convolution:
 	\begin{equation}
-		\tilde{I}(x,y) = I(x,y) * h(x,y)
-		= \sum_{m} \sum_{n} I(x-m,\, y-n)\, h(m,n),
+		\tilde{I}(x,y) = I(x,y) * h(x,y),
 		\label{eq:lpf}
 	\end{equation}
-	
-	where $h(x,y)$ is the filter kernel. The Gaussian blur kernel is:
-	
-	\begin{equation}
-		h_\sigma(x,y) = \frac{1}{2\pi\sigma^2}
-		\exp\!\left(-\frac{x^2 + y^2}{2\sigma^2}\right),
-		\label{eq:gaussian_kernel}
-	\end{equation}
-	
-	with standard deviation $\sigma$ controlling the degree of blurring. In the frequency domain,
-	convolution becomes multiplication:
-	
+	where $h(x,y)$ is the filter kernel and $\sigma$ controls the 
+	degree of blurring. A key property is that in the frequency domain, 
+	this convolution becomes a simple multiplication:
 	\begin{equation}
 		\tilde{F}(u,v) = F(u,v) \cdot H(u,v),
 		\label{eq:lpf_freq}
 	\end{equation}
+	where $H(u,v) \in [0,1]$ is an attenuation factor --- values near 
+	zero mean that frequency is heavily suppressed. For a Gaussian blur 
+	with $\sigma = 1.5$, mid-frequency components are already reduced 
+	by $30$--$60\%$.
 	
-	where $H(u,v)$ is the Fourier transform of $h(x,y)$. For a Gaussian kernel, $H(u,v)$ is itself
-	a Gaussian centred at the origin, decaying to near zero at high frequencies. The attenuation
-	factor $H(u,v)$ for a Gaussian blur with $\sigma = 1.5$ already reduces mid-frequency components
-	by $30$--$60\%$, which is sufficient to destroy embeddings of moderate strength.
-	
-	\paragraph{Impact on steganographic embedding.}
-	Low-pass filtering is particularly damaging to embeddings in high and mid-frequency DCT or
-	DWT coefficients, because the filter directly suppresses the spectral region used for embedding.
-	The fraction of the embedded signal that survives filtering is $H(u_0, v_0)$ at the embedding
-	frequency $(u_0, v_0)$. For a Gaussian blur with $\sigma = 2.0$, high-frequency DCT coefficients
-	($u+v \geq 10$) are attenuated by more than $90\%$, making unprotected high-frequency embedding
-	essentially non-survivable. Median filtering is additionally non-linear and cannot be described
-	by a single attenuation factor; it is particularly effective at destroying LSB-level spatial
-	embeddings.
+%	\paragraph{Impact on steganographic embedding.}
+%	A steganographic embedding at frequency $(u_0, v_0)$ survives only 
+%	as a fraction $H(u_0, v_0)$ of its original strength. For 
+%	high-frequency embeddings under $\sigma = 2.0$, this fraction 
+%	drops below $10\%$, effectively destroying the hidden message. 
+%	Median filtering is additionally destructive because isolated 
+%	modified pixels are simply voted out by their unmodified neighbours.
+%	
+%	\paragraph{Impact on steganographic embedding.}
+%	Low-pass filtering is particularly damaging to embeddings in high and mid-frequency DCT or
+%	DWT coefficients, because the filter directly suppresses the spectral region used for embedding.
+%	The fraction of the embedded signal that survives filtering is $H(u_0, v_0)$ at the embedding
+%	frequency $(u_0, v_0)$. For a Gaussian blur with $\sigma = 2.0$, high-frequency DCT coefficients
+%	($u+v \geq 10$) are attenuated by more than $90\%$, making unprotected high-frequency embedding
+%	essentially non-survivable. Median filtering is additionally non-linear and cannot be described
+%	by a single attenuation factor; it is particularly effective at destroying LSB-level spatial
+%	embeddings.
 	
 	% Figure suggestion (use a real image or pgfplots):
 	% Title: "Frequency-domain attenuation profiles of Gaussian blur at sigma=1, 1.5, 2.0,

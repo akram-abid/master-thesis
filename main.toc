@@ -71,30 +71,29 @@
 \contentsline {paragraph}{Impact on steganographic embedding.}{31}{equation.2.28}%
 \contentsline {subsubsection}{Filtering Attacks}{31}{equation.2.29}%
 \contentsline {paragraph}{Formal degradation model.}{31}{equation.2.29}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{32}{equation.2.32}%
-\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{32}{equation.2.32}%
+\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{32}{equation.2.31}%
 \contentsline {subsection}{\numberline {2.5.2}Geometric Attacks}{32}{subsection.2.5.2}%
 \contentsline {subsubsection}{Cropping}{32}{subsection.2.5.2}%
 \contentsline {paragraph}{Formal degradation model.}{32}{subsection.2.5.2}%
-\contentsline {paragraph}{Synchronisation effect.}{33}{equation.2.35}%
+\contentsline {paragraph}{Synchronisation effect.}{32}{equation.2.34}%
 \contentsline {subsubsection}{Resizing and Resampling}{33}{figure.2.12}%
 \contentsline {paragraph}{Formal degradation model.}{33}{figure.2.12}%
+\contentsline {paragraph}{Impact on steganographic embedding.}{33}{equation.2.35}%
+\contentsline {subsubsection}{Rotation}{34}{equation.2.35}%
+\contentsline {paragraph}{Formal degradation model.}{34}{equation.2.35}%
 \contentsline {paragraph}{Impact on steganographic embedding.}{34}{equation.2.36}%
-\contentsline {subsubsection}{Rotation}{34}{equation.2.36}%
-\contentsline {paragraph}{Formal degradation model.}{34}{equation.2.36}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{34}{equation.2.37}%
-\contentsline {subsubsection}{Affine and Projective Transformations}{34}{equation.2.37}%
-\contentsline {subsection}{\numberline {2.5.3}Compound and Pipeline Attacks}{35}{subsection.2.5.3}%
-\contentsline {paragraph}{Social media processing pipelines.}{35}{subsection.2.5.3}%
+\contentsline {subsubsection}{Affine and Projective Transformations}{34}{equation.2.36}%
+\contentsline {subsection}{\numberline {2.5.3}Compound and Pipeline Attacks}{34}{subsection.2.5.3}%
+\contentsline {paragraph}{Social media processing pipelines.}{34}{subsection.2.5.3}%
 \contentsline {paragraph}{Formal compound degradation model.}{35}{table.2.2}%
-\contentsline {paragraph}{Empirical impact.}{35}{equation.2.39}%
-\contentsline {subsection}{\numberline {2.5.4}Steganalytic Attacks}{36}{subsection.2.5.4}%
-\contentsline {subsubsection}{Statistical Detection Principles}{36}{subsection.2.5.4}%
+\contentsline {paragraph}{Empirical impact.}{35}{equation.2.38}%
+\contentsline {subsection}{\numberline {2.5.4}Steganalytic Attacks}{35}{subsection.2.5.4}%
+\contentsline {subsubsection}{Statistical Detection Principles}{35}{subsection.2.5.4}%
 \contentsline {paragraph}{Classical steganalysis: targeted detectors.}{36}{subsection.2.5.4}%
 \contentsline {paragraph}{Universal steganalysis.}{36}{subsection.2.5.4}%
 \contentsline {paragraph}{Deep learning steganalysis.}{36}{subsection.2.5.4}%
 \contentsline {subsubsection}{Implications for Robustness-Oriented Design}{36}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{37}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{36}{subsection.2.5.5}%
 \contentsline {section}{\numberline {2.6}Discussion and Research Gap}{38}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Recent Advances in Deep Learning-Based Steganography}{39}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}The Shift Toward End-to-End Learned Steganography}{40}{subsection.2.7.1}%
@@ -126,20 +125,20 @@
 \contentsline {section}{\numberline {2.8}Evaluation Criteria in Steganographic Systems}{46}{section.2.8}%
 \contentsline {subsection}{\numberline {2.8.1}Imperceptibility Metrics}{46}{subsection.2.8.1}%
 \contentsline {subsubsection}{Mean Squared Error (MSE)}{47}{subsection.2.8.1}%
-\contentsline {subsubsection}{Peak Signal-to-Noise Ratio (PSNR)}{47}{equation.2.45}%
-\contentsline {paragraph}{Interpretation and thresholds.}{47}{equation.2.46}%
-\contentsline {paragraph}{Limitations.}{47}{equation.2.46}%
-\contentsline {paragraph}{Relationship between PSNR and embedding capacity.}{48}{equation.2.46}%
-\contentsline {subsubsection}{Structural Similarity Index Measure (SSIM)}{48}{equation.2.46}%
-\contentsline {paragraph}{Interpretation.}{48}{equation.2.47}%
+\contentsline {subsubsection}{Peak Signal-to-Noise Ratio (PSNR)}{47}{equation.2.44}%
+\contentsline {paragraph}{Interpretation and thresholds.}{47}{equation.2.45}%
+\contentsline {paragraph}{Limitations.}{47}{equation.2.45}%
+\contentsline {paragraph}{Relationship between PSNR and embedding capacity.}{48}{equation.2.45}%
+\contentsline {subsubsection}{Structural Similarity Index Measure (SSIM)}{48}{equation.2.45}%
+\contentsline {paragraph}{Interpretation.}{48}{equation.2.46}%
 \contentsline {subsubsection}{Relationship Between Imperceptibility Metrics}{48}{figure.2.16}%
 \contentsline {subsection}{\numberline {2.8.2}Robustness Metrics}{49}{subsection.2.8.2}%
 \contentsline {subsubsection}{Bit Error Rate (BER)}{49}{subsection.2.8.2}%
-\contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.48}%
-\contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.48}%
-\contentsline {paragraph}{BER under partial data loss.}{50}{equation.2.49}%
-\contentsline {subsubsection}{Normalised Correlation (NC)}{50}{equation.2.49}%
-\contentsline {paragraph}{Interpretation.}{50}{equation.2.50}%
+\contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.47}%
+\contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.47}%
+\contentsline {paragraph}{BER under partial data loss.}{50}{equation.2.48}%
+\contentsline {subsubsection}{Normalised Correlation (NC)}{50}{equation.2.48}%
+\contentsline {paragraph}{Interpretation.}{50}{equation.2.49}%
 \contentsline {subsection}{\numberline {2.8.3}Partial Recovery Rate (PRR)}{51}{subsection.2.8.3}%
 \contentsline {subsection}{\numberline {2.8.4}Unified View of Evaluation Criteria}{51}{subsection.2.8.4}%
 \contentsline {chapter}{\numberline {3}Proposed Self-Recovering Steganography Framework}{53}{chapter.3}%
