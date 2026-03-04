@@ -71,19 +71,6 @@ Po-Yueh Chen and Hung-Ju Lin.
 \newblock {\em International Journal of Applied Science and Engineering},
   4(3):275--290, 2006.
 
-\bibitem{wallace1992jpeg}
-Gregory~K. Wallace.
-\newblock The jpeg still picture compression standard.
-\newblock {\em IEEE Transactions on Consumer Electronics}, 38(1):xviii--xxxiv,
-  1992.
-
-\bibitem{mallat1989theory}
-Stephane~G. Mallat.
-\newblock A theory for multiresolution signal decomposition: The wavelet
-  representation.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  11(7):674--693, 1989.
-
 \bibitem{bracewell2000fourier}
 Ronald~N. Bracewell.
 \newblock {\em The Fourier Transform and Its Applications}.
@@ -94,66 +81,26 @@ J.~J. K.~{\'O} Ruanaidh and T.~Pun.
 \newblock Rotation, scale and translation invariant digital image watermarking.
 \newblock In {\em IEEE International Conference on Image Processing}, 1998.
 
-\bibitem{solachidis2001circularly}
-V.~Solachidis and I.~Pitas.
-\newblock Circularly symmetric watermark embedding in 2-d dft domain.
-\newblock In {\em IEEE Transactions on Image Processing}, volume~10, pages
-  1741--1753, 2001.
+\bibitem{oppenheim1981importance}
+Alan~V. Oppenheim and Jae~S. Lim.
+\newblock The importance of phase in signals.
+\newblock {\em Proceedings of the IEEE}, pages 529--541, 1981.
 
 \bibitem{marvel1999spread}
 Lisa~M. Marvel, Charles~G. Boncelet, and Charles~T. Retter.
 \newblock Spread spectrum image steganography.
 \newblock {\em IEEE Transactions on Image Processing}, 8(8):1075--1083, 1999.
 
-\bibitem{oppenheim1981importance}
-Alan~V. Oppenheim and Jae~S. Lim.
-\newblock The importance of phase in signals.
-\newblock {\em Proceedings of the IEEE}, pages 529--541, 1981.
-
-\bibitem{kovesi1999image}
-Peter Kovesi.
-\newblock Image features from phase congruency.
-\newblock {\em Videre: Journal of Computer Vision Research}, 1(3):1--26, 1999.
-
-\bibitem{pitas1996applying}
-I.~Pitas.
-\newblock A method for signature casting on digital images.
-\newblock In {\em Proceedings of IEEE International Conference on Image
-  Processing}, volume~3, pages 215--218, 1996.
-
-\bibitem{harris1978use}
-Fredric~J. Harris.
-\newblock On the use of windows for harmonic analysis with the discrete fourier
-  transform.
-\newblock {\em Proceedings of the IEEE}, 66(1):51--83, 1978.
-
 \bibitem{cooley1965algorithm}
 James~W. Cooley and John~W. Tukey.
 \newblock An algorithm for the machine calculation of complex fourier series.
 \newblock {\em Mathematics of Computation}, 19(90):297--301, 1965.
 
-\bibitem{podilchuk2001image}
-Christine~I. Podilchuk and Wenjun Zeng.
-\newblock Image-adaptive watermarking using visual models.
-\newblock {\em IEEE Journal on Selected Areas in Communications},
-  16(4):525--539, 1998.
-
-\bibitem{chen2001quantization}
-Brian Chen and Gregory~W. Wornell.
-\newblock Quantization index modulation: A class of provably good methods for
-  digital watermarking and information embedding.
-\newblock {\em IEEE Transactions on Information Theory}, 47(4):1423--1443,
-  2001.
-
-\bibitem{barni2001improved}
-M.~Barni, F.~Bartolini, V.~Cappellini, and A.~Piva.
-\newblock A dct-domain system for robust image watermarking.
-\newblock {\em Signal Processing}, 66(3):357--372, 1998.
-
-\bibitem{oppenheim1999discrete}
-Alan~V. Oppenheim and Ronald~W. Schafer.
-\newblock {\em Discrete-Time Signal Processing}.
-\newblock Prentice Hall, 2nd edition, 1999.
+\bibitem{solachidis2001circularly}
+V.~Solachidis and I.~Pitas.
+\newblock Circularly symmetric watermark embedding in 2-d dft domain.
+\newblock In {\em IEEE Transactions on Image Processing}, volume~10, pages
+  1741--1753, 2001.
 
 \bibitem{kutter1999digital}
 Martin Kutter.
@@ -172,6 +119,18 @@ Ingemar~J. Cox, Matthew~L. Miller, Jeffrey~A. Bloom, Jessica Fridrich, and Ton
 \newblock {\em Digital Watermarking and Steganography}.
 \newblock Morgan Kaufmann, 2nd edition, 2007.
 
+\bibitem{chen2001quantization}
+Brian Chen and Gregory~W. Wornell.
+\newblock Quantization index modulation: A class of provably good methods for
+  digital watermarking and information embedding.
+\newblock {\em IEEE Transactions on Information Theory}, 47(4):1423--1443,
+  2001.
+
+\bibitem{barni2001improved}
+M.~Barni, F.~Bartolini, V.~Cappellini, and A.~Piva.
+\newblock A dct-domain system for robust image watermarking.
+\newblock {\em Signal Processing}, 66(3):357--372, 1998.
+
 \bibitem{Piva2002}
 Mauro Barni, Franco Bartolini, and Alessandro Piva.
 \newblock Multichannel watermarking of color images.
@@ -182,6 +141,18 @@ Mauro Barni, Franco Bartolini, and Alessandro Piva.
 Neil~F. Johnson and Sushil Jajodia.
 \newblock Steganography: Seeing the unseen.
 \newblock In {\em IEEE Computer}, pages 26--34, 1998.
+
+\bibitem{wallace1992jpeg}
+Gregory~K. Wallace.
+\newblock The jpeg still picture compression standard.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 38(1):xviii--xxxiv,
+  1992.
+
+\bibitem{fridrich2009steganography}
+Jessica Fridrich.
+\newblock {\em Steganography in Digital Media: Principles, Algorithms, and
+  Applications}.
+\newblock Cambridge University Press, 2009.
 
 \bibitem{westfeld2001f5}
 Andreas Westfeld.

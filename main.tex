@@ -1476,17 +1476,52 @@
 		\tilde{I}(x,y) = I(x,y) * h(x,y),
 		\label{eq:lpf}
 	\end{equation}
-	where $h(x,y)$ is the filter kernel and $\sigma$ controls the 
-	degree of blurring. A key property is that in the frequency domain, 
-	this convolution becomes a simple multiplication:
+	where $h(x,y)$ is the filter kernel. For Gaussian blurring, the 
+	kernel weights are fully determined by the standard deviation 
+	$\sigma$, which controls the degree of blurring:
+	\begin{equation}
+		h(k_x, k_y) = \exp\!\left(-\frac{k_x^2 + k_y^2}{2\sigma^2}\right),
+		\label{eq:gaussian_kernel}
+	\end{equation}
+	where $(k_x, k_y)$ are the offsets from the kernel centre. Weights 
+	decay with distance, so nearby neighbours contribute more than 
+	distant ones. A larger $\sigma$ causes weights to decay more slowly, 
+	incorporating more distant neighbours and producing heavier blurring.
+	
+	In the frequency domain, this convolution becomes a simple multiplication:
 	\begin{equation}
 		\tilde{F}(u,v) = F(u,v) \cdot H(u,v),
 		\label{eq:lpf_freq}
 	\end{equation}
-	where $H(u,v) \in [0,1]$ is an attenuation factor --- values near 
-	zero mean that frequency is heavily suppressed. For a Gaussian blur 
-	with $\sigma = 1.5$, mid-frequency components are already reduced 
-	by $30$--$60\%$.
+	where the attenuation factor $H(u,v) \in [0,1]$ is given by:
+	\begin{equation}
+		H(u,v) = \exp\!\left(-\frac{u^2 + v^2}{2\sigma^2}\right),
+		\label{eq:gaussian_H}
+	\end{equation}
+	Values near zero indicate that frequency component is heavily 
+	suppressed. For a Gaussian blur with $\sigma = 1.5$, mid-frequency 
+	components are already reduced by $30$--$60\%$.
+	
+	\paragraph{Impact on steganographic embedding.}
+	A steganographic signal embedded at frequency $(u_0, v_0)$ with 
+	strength $\alpha$ survives blurring only as a fraction of its 
+	original magnitude. The surviving signal after filtering is:
+	\begin{equation}
+		\alpha_{\text{survived}} = \alpha \cdot H(u_0, v_0).
+		\label{eq:survived}
+	\end{equation}
+	For a decoder using detection threshold $\alpha/2$, the embedded 
+	bit is recoverable only when:
+	\begin{equation}
+		\alpha \cdot H(u_0, v_0) > \frac{\alpha}{2},
+	\end{equation}
+	which requires $H(u_0, v_0) > 0.5$. For high-frequency embeddings 
+	under $\sigma = 2.0$, $H$ drops below $0.1$, making recovery 
+	essentially impossible regardless of embedding strength. Median 
+	filtering is additionally destructive because it replaces each 
+	pixel with the median of its neighbours rather than a weighted 
+	average, meaning isolated modified pixels are voted out entirely 
+	and the attenuation cannot be described by a single factor $H(u,v)$.
 	
 %	\paragraph{Impact on steganographic embedding.}
 %	A steganographic embedding at frequency $(u_0, v_0)$ survives only 
@@ -1920,7 +1955,7 @@
 	process necessarily alters the image signal. Statistical steganalysis exploits these differences
 	by computing feature vectors that capture deviations from the statistics of natural, unmodified
 	images \cite{Fridrich2012}. The Cartesian Calibration framework introduced by Fridrich and
-	Goljan \cite{fridrich2004attacks} models the statistical footprint of embedding as a deviation
+	Goljan \cite{fridrich2009steganography} models the statistical footprint of embedding as a deviation
 	from the ``natural image manifold'' and uses decompressed JPEG images as a calibration reference.
 	
 	\paragraph{Classical steganalysis: targeted detectors.}
