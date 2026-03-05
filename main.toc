@@ -115,10 +115,10 @@
 \contentsline {subsection}{\numberline {2.7.6}Robust Deep Steganography Against Social Network Processing}{43}{subsection.2.7.6}%
 \contentsline {subsection}{\numberline {2.7.7}Attention Mechanisms and Semantic-Aware Embedding}{44}{subsection.2.7.7}%
 \contentsline {subsection}{\numberline {2.7.8}Hybrid Transform-Network Approaches}{44}{subsection.2.7.8}%
-\contentsline {subsection}{\numberline {2.7.9}Deep Learning Steganalysis and Its Impact on Robust Design}{45}{subsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.7.9}Deep Learning Steganalysis and Its Impact on Robust Design}{44}{subsection.2.7.9}%
 \contentsline {subsection}{\numberline {2.7.10}Summary Table and Comparative Analysis}{45}{subsection.2.7.10}%
 \contentsline {subsection}{\numberline {2.7.11}Why This Thesis Adopts a Classical Framework}{45}{subsection.2.7.11}%
-\contentsline {paragraph}{Partial recovery as a first-class design objective.}{46}{subsection.2.7.11}%
+\contentsline {paragraph}{Partial recovery as a first-class design objective.}{45}{subsection.2.7.11}%
 \contentsline {paragraph}{Robustness to \emph {unseen} compound attacks.}{46}{subsection.2.7.11}%
 \contentsline {paragraph}{Interpretability and analytical robustness guarantees.}{46}{subsection.2.7.11}%
 \contentsline {paragraph}{Computational accessibility.}{46}{subsection.2.7.11}%
@@ -135,7 +135,7 @@
 \contentsline {subsubsection}{Relationship Between Imperceptibility Metrics}{49}{figure.2.16}%
 \contentsline {subsection}{\numberline {2.8.2}Robustness Metrics}{49}{subsection.2.8.2}%
 \contentsline {subsubsection}{Bit Error Rate (BER)}{49}{subsection.2.8.2}%
-\contentsline {paragraph}{Interpretation and thresholds.}{50}{equation.2.51}%
+\contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.51}%
 \contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.51}%
 \contentsline {paragraph}{BER under partial data loss.}{50}{equation.2.52}%
 \contentsline {subsubsection}{Normalised Correlation (NC)}{50}{equation.2.52}%
