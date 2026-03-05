@@ -137,7 +137,6 @@
 \contentsline {subsubsection}{Bit Error Rate (BER)}{49}{subsection.2.8.2}%
 \contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.51}%
 \contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.51}%
-\contentsline {paragraph}{BER under partial data loss.}{50}{equation.2.52}%
 \contentsline {subsubsection}{Normalised Correlation (NC)}{50}{equation.2.52}%
 \contentsline {paragraph}{Interpretation.}{50}{equation.2.53}%
 \contentsline {subsection}{\numberline {2.8.3}Partial Recovery Rate (PRR)}{51}{subsection.2.8.3}%

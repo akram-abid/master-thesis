@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  4 MAR 2026 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  5 MAR 2026 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1511,7 +1511,7 @@ Chapter 3.
 [54]
 
 [55]
-Overfull \hbox (6.92679pt too wide) in paragraph at lines 3196--3196
+Overfull \hbox (6.92679pt too wide) in paragraph at lines 3194--3194
 |[]\T1/lmr/bx/n/17.28 Computational Com-plex-ity and Prac-ti-cal Con-sid-er-a-t
 ions| 
  []
@@ -1579,7 +1579,7 @@ type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (64 pages, 16566673 bytes).
+Output written on main.pdf (64 pages, 16566083 bytes).
 PDF statistics:
  1397 PDF objects out of 1440 (max. 8388607)
  1253 compressed objects within 13 object streams
