@@ -2947,34 +2947,34 @@
 	reversals are possible. In this work, both metrics are reported to facilitate comparison with
 	results from the watermarking literature, which predominantly uses NC.
 	
-	% ----------------------------------------------------------
-	\subsection{Partial Recovery Rate (PRR)}
-	\label{subsec:prr}
-	% ----------------------------------------------------------
-	
-	Classical steganographic evaluation is concerned with binary outcomes: either the entire message
-	is recovered (BER $\approx 0$) or it is not. In the context of the self-recovering framework
-	proposed in this thesis, however, the system is explicitly designed to recover \emph{partial}
-	messages when not all embedded fragments survive. A metric that captures this partial-recovery
-	behaviour is therefore needed.
-	
-	We define the \textbf{Partial Recovery Rate (PRR)} as the fraction of payload fragments that
-	are successfully recovered (with BER below a threshold $\epsilon$ for each fragment) from the
-	degraded stego-image:
-	%
-	\begin{equation}
-		\mathrm{PRR} = \frac{|\{i : \mathrm{BER}(F_i, \hat{F}_i) \leq \epsilon\}|}{N_F},
-		\label{eq:prr}
-	\end{equation}
-	%
-	where $N_F$ is the total number of fragments in the structured payload, $F_i$ is the $i$-th
-	original fragment, $\hat{F}_i$ is the extracted version, and $\epsilon$ is a per-fragment BER
-	threshold (typically $0.05$ when ECC is applied at the fragment level). A PRR of $1.0$ indicates
-	complete recovery; a PRR of $0.5$ indicates that half the message fragments were correctly
-	extracted; a PRR of $0.0$ indicates total failure. This metric is unique to the present work
-	and is reported in Chapter~5 to assess the partial-recovery performance of the proposed framework
-	under cropping and localised tampering attacks.
-	
+%	% ----------------------------------------------------------
+%	\subsection{Partial Recovery Rate (PRR)}
+%	\label{subsec:prr}
+%	% ----------------------------------------------------------
+%	
+%	Classical steganographic evaluation is concerned with binary outcomes: either the entire message
+%	is recovered (BER $\approx 0$) or it is not. In the context of the self-recovering framework
+%	proposed in this thesis, however, the system is explicitly designed to recover \emph{partial}
+%	messages when not all embedded fragments survive. A metric that captures this partial-recovery
+%	behaviour is therefore needed.
+%	
+%	We define the \textbf{Partial Recovery Rate (PRR)} as the fraction of payload fragments that
+%	are successfully recovered (with BER below a threshold $\epsilon$ for each fragment) from the
+%	degraded stego-image:
+%	%
+%	\begin{equation}
+%		\mathrm{PRR} = \frac{|\{i : \mathrm{BER}(F_i, \hat{F}_i) \leq \epsilon\}|}{N_F},
+%		\label{eq:prr}
+%	\end{equation}
+%	%
+%	where $N_F$ is the total number of fragments in the structured payload, $F_i$ is the $i$-th
+%	original fragment, $\hat{F}_i$ is the extracted version, and $\epsilon$ is a per-fragment BER
+%	threshold (typically $0.05$ when ECC is applied at the fragment level). A PRR of $1.0$ indicates
+%	complete recovery; a PRR of $0.5$ indicates that half the message fragments were correctly
+%	extracted; a PRR of $0.0$ indicates total failure. This metric is unique to the present work
+%	and is reported in Chapter~5 to assess the partial-recovery performance of the proposed framework
+%	under cropping and localised tampering attacks.
+%	
 	% ----------------------------------------------------------
 	\subsection{Unified View of Evaluation Criteria}
 	\label{subsec:unified_view}
@@ -3070,188 +3070,188 @@
 	and for the classical baselines under each attack scenario, enabling a rigorous comparative
 	evaluation that respects the multi-objective nature of the steganographic design problem.
 	
-	%=================================
-	
-	\chapter{Proposed Self-Recovering Steganography Framework}
-	
-	\section{Design Motivation and Objectives}
-	This chapter introduces the proposed steganographic framework, which is designed to address the limitations identified in the literature review, particularly the fragility of conventional embedding methods under severe image degradation and geometric desynchronization.
-	
-	The primary design goal of the proposed framework is to enhance payload survivability rather than solely reinforcing embedding locations. Unlike traditional approaches that assume intact data and perfect synchronization, the proposed system explicitly assumes partial data loss and uncontrolled image transformations. The framework is therefore designed to tolerate damage, enable partial recovery, and reconstruct missing information using structured payload relationships.
-	
-	\section{High-Level System Overview}
-	This section presents a conceptual overview of the proposed framework, illustrating the main processing stages at both the sender and receiver sides.
-	
-	At a high level, the system consists of four main components:
-	\begin{itemize}
-		\item Payload structuring and self-description
-		\item Fragmentation and inter-fragment relationship encoding
-		\item Multi-domain embedding strategy
-		\item Damage-aware extraction and reconstruction
-	\end{itemize}
-	
-	The interaction between these components enables robust message recovery even when a significant portion of the embedded data is degraded or removed.
-	
-	\subsection{Sender-Side Processing Pipeline}
-	The sender-side pipeline begins with the secret message and produces a stego-image suitable for transmission through uncontrolled digital environments.
-	
-	The main stages include:
-	\begin{itemize}
-		\item Conversion of the secret message into a structured payload
-		\item Fragment generation and relationship encoding
-		\item Selection of embedding domains and regions
-		\item Embedding of fragments into the cover image
-	\end{itemize}
-	
-	\subsection{Receiver-Side Processing Pipeline}
-	The receiver-side pipeline operates on a potentially degraded stego-image and attempts to recover the original message.
-	
-	The extraction process includes:
-	\begin{itemize}
-		\item Detection and extraction of embedded fragments
-		\item Damage estimation and fragment confidence evaluation
-		\item Fragment validation and relationship checking
-		\item Partial reconstruction and message reassembly
-	\end{itemize}
-	
-	\section{Structured Payload Representation}
-	Instead of embedding raw binary data, the proposed framework transforms the secret message into a self-describing structured payload. This payload contains not only the original message bits but also additional information that enables validation, ordering, and reconstruction.
-	
-	\subsection{Payload Components}
-	Each payload fragment contains the following elements:
-	\begin{itemize}
-		\item Fragment identifier and ordering information
-		\item Local payload data
-		\item Lightweight checksum for integrity verification
-		\item Cross-fragment reference information
-	\end{itemize}
-	
-	This structure allows individual fragments to contribute to the reconstruction of missing or corrupted fragments.
-	
-	\subsection{Inter-Fragment Relationships}
-	Fragments are not treated as independent entities. Instead, each fragment stores partial information about neighboring and non-neighboring fragments. These relationships form a redundancy graph that supports reconstruction under partial data loss.
-	
-	The use of relational information enables recovery even when contiguous regions of the image are destroyed.
-	
-	\section{Fragmentation Strategy}
-	The structured payload is divided into multiple interconnected fragments to increase resilience against localized damage.
-	
-	\subsection{Fragment Size and Granularity}
-	Fragment size is chosen as a compromise between robustness and capacity. Smaller fragments improve survivability under cropping, while larger fragments reduce overhead.
-	
-	This work adopts a fixed fragment size to simplify reconstruction and evaluation.
-	
-	\subsection{Redundancy and Distribution Policy}
-	Controlled redundancy is introduced at the fragment level rather than the bit level. Each fragment is embedded multiple times across different domains or image regions according to a predefined distribution policy.
-	
-	The redundancy level is configurable and directly impacts robustness and payload capacity.
-	
-	\section{Multi-Domain Embedding Strategy}
-	To reduce vulnerability to specific attack types, fragments are embedded across multiple embedding domains, each offering resistance to different forms of degradation.
-	
-	\subsection{Spatial Domain Embedding}
-	Fragments embedded in spatial texture regions are resilient to localized cropping and partial tampering. Texture-based masking is used to minimize visual distortion.
-	
-	\subsection{Frequency Domain Embedding}
-	Mid-frequency DCT coefficients are used to embed fragments resistant to JPEG compression and moderate noise. Embedding strength is adjusted to balance imperceptibility and robustness.
-	
-	\subsection{Multi-Scale and Redundant Embedding}
-	Selected fragments are embedded at different spatial resolutions or downsampled representations of the image to improve resilience against resizing operations.
-	
-	\subsection{Color Channel Utilization}
-	For color images, redundancy is introduced across luminance and chrominance channels. Stronger embedding is applied to the luminance channel, while weaker redundant embedding is used in chrominance channels.
-	
-	\section{Embedding Control and Parameter Selection}
-	This section describes the parameters governing embedding strength, fragment placement, and redundancy levels.
-	
-	\subsection{Key-Based Fragment Placement}
-	A secret key is used to pseudo-randomly determine fragment locations and embedding domains, enhancing security and preventing unauthorized extraction.
-	
-	\subsection{Embedding Strength Adaptation}
-	Embedding strength is adjusted based on local image characteristics, such as texture intensity and frequency stability.
-	
-	\section{Damage-Aware Extraction Process}
-	Unlike traditional extraction schemes, the proposed framework does not assume intact data. Instead, it explicitly estimates damage and adapts the extraction process accordingly.
-	
-	\subsection{Fragment Detection and Validation}
-	Extracted fragments are validated using checksums and structural consistency checks. Invalid or severely corrupted fragments are discarded or assigned low confidence.
-	
-	\subsection{Confidence Scoring Mechanism}
-	Each fragment is assigned a confidence score based on extraction quality, consistency with neighboring fragments, and agreement with relational information.
-	
-	\subsection{Adaptive Fragment Selection}
-	Fragments with higher confidence scores are prioritized during reconstruction. Lower-confidence fragments are used only when necessary.
-	
-	\section{Message Reconstruction and Self-Recovery}
-	The final message is reconstructed using surviving fragments and their encoded relationships.
-	
-	\subsection{Partial Reconstruction Strategy}
-	Missing fragments are reconstructed using relational summaries and redundancy information provided by neighboring fragments.
-	
-	\subsection{Failure Conditions}
-	This section defines conditions under which full or partial recovery is not possible, such as excessive data loss or severe compound attacks.
-	
-	\section{Computational Complexity and Practical Considerations}
-	The computational overhead of the proposed framework is analyzed in terms of embedding time, extraction time, and memory requirements.
-	
-	\subsection{Complexity Analysis}
-	The complexity of payload structuring, embedding, and extraction is discussed qualitatively.
-	
-	\subsection{Implementation Constraints}
-	Practical limitations related to image size, payload capacity, and real-world deployment are identified.
-	
-	\section{Summary of the Proposed Framework}
-	This section summarizes the key design principles and highlights how the proposed framework addresses the research gaps identified in Chapter 2, particularly synchronization loss, partial data destruction, and robustness under compound attacks.
-	
-	
-	% =========================
-	
-	\chapter{Implementation and Experimental Setup}
-	\section{Development Environment}
-	The tools and software environment used for implementation are described.
-	
-	\section{Dataset Description}
-	The image datasets used for experimentation are presented.
-	
-	\section{Attack Simulation}
-	This section describes how image degradation and tampering scenarios are simulated.
-	
-	\section{Evaluation Metrics}
-	\subsection{Imperceptibility Metrics}
-	PSNR and SSIM are introduced.
-	
-	\subsection{Robustness Metrics}
-	Bit Error Rate (BER) and Normalized Correlation (NC) are defined.
-	
-	% =========================
-	
-	\chapter{Results and Discussion}
-	\section{Imperceptibility Evaluation}
-	Visual quality and distortion analysis are presented.
-	
-	\section{Robustness Under Image Degradation}
-	Performance under compression, noise, and resizing is analyzed.
-	
-	\section{Robustness Under Partial Data Loss}
-	The impact of cropping and localized tampering is evaluated.
-	
-	\section{Comparative Analysis}
-	The proposed framework is compared with classical steganography methods.
-	
-	\section{Discussion of Results}
-	Strengths, weaknesses, and observed trade-offs are discussed.
-	
-	% =========================
-	
-	\chapter{Conclusion and Future Work}
-	\section{Summary of Findings}
-	The main outcomes of the study are summarized.
-	
-	\section{Limitations}
-	Practical and theoretical limitations of the framework are discussed.
-	
-	\section{Future Research Directions}
-	Possible extensions and improvements are suggested.
+%	%=================================
+%	
+%	\chapter{Proposed Self-Recovering Steganography Framework}
+%	
+%	\section{Design Motivation and Objectives}
+%	This chapter introduces the proposed steganographic framework, which is designed to address the limitations identified in the literature review, particularly the fragility of conventional embedding methods under severe image degradation and geometric desynchronization.
+%	
+%	The primary design goal of the proposed framework is to enhance payload survivability rather than solely reinforcing embedding locations. Unlike traditional approaches that assume intact data and perfect synchronization, the proposed system explicitly assumes partial data loss and uncontrolled image transformations. The framework is therefore designed to tolerate damage, enable partial recovery, and reconstruct missing information using structured payload relationships.
+%	
+%	\section{High-Level System Overview}
+%	This section presents a conceptual overview of the proposed framework, illustrating the main processing stages at both the sender and receiver sides.
+%	
+%	At a high level, the system consists of four main components:
+%	\begin{itemize}
+%		\item Payload structuring and self-description
+%		\item Fragmentation and inter-fragment relationship encoding
+%		\item Multi-domain embedding strategy
+%		\item Damage-aware extraction and reconstruction
+%	\end{itemize}
+%	
+%	The interaction between these components enables robust message recovery even when a significant portion of the embedded data is degraded or removed.
+%	
+%	\subsection{Sender-Side Processing Pipeline}
+%	The sender-side pipeline begins with the secret message and produces a stego-image suitable for transmission through uncontrolled digital environments.
+%	
+%	The main stages include:
+%	\begin{itemize}
+%		\item Conversion of the secret message into a structured payload
+%		\item Fragment generation and relationship encoding
+%		\item Selection of embedding domains and regions
+%		\item Embedding of fragments into the cover image
+%	\end{itemize}
+%	
+%	\subsection{Receiver-Side Processing Pipeline}
+%	The receiver-side pipeline operates on a potentially degraded stego-image and attempts to recover the original message.
+%	
+%	The extraction process includes:
+%	\begin{itemize}
+%		\item Detection and extraction of embedded fragments
+%		\item Damage estimation and fragment confidence evaluation
+%		\item Fragment validation and relationship checking
+%		\item Partial reconstruction and message reassembly
+%	\end{itemize}
+%	
+%	\section{Structured Payload Representation}
+%	Instead of embedding raw binary data, the proposed framework transforms the secret message into a self-describing structured payload. This payload contains not only the original message bits but also additional information that enables validation, ordering, and reconstruction.
+%	
+%	\subsection{Payload Components}
+%	Each payload fragment contains the following elements:
+%	\begin{itemize}
+%		\item Fragment identifier and ordering information
+%		\item Local payload data
+%		\item Lightweight checksum for integrity verification
+%		\item Cross-fragment reference information
+%	\end{itemize}
+%	
+%	This structure allows individual fragments to contribute to the reconstruction of missing or corrupted fragments.
+%	
+%	\subsection{Inter-Fragment Relationships}
+%	Fragments are not treated as independent entities. Instead, each fragment stores partial information about neighboring and non-neighboring fragments. These relationships form a redundancy graph that supports reconstruction under partial data loss.
+%	
+%	The use of relational information enables recovery even when contiguous regions of the image are destroyed.
+%	
+%	\section{Fragmentation Strategy}
+%	The structured payload is divided into multiple interconnected fragments to increase resilience against localized damage.
+%	
+%	\subsection{Fragment Size and Granularity}
+%	Fragment size is chosen as a compromise between robustness and capacity. Smaller fragments improve survivability under cropping, while larger fragments reduce overhead.
+%	
+%	This work adopts a fixed fragment size to simplify reconstruction and evaluation.
+%	
+%	\subsection{Redundancy and Distribution Policy}
+%	Controlled redundancy is introduced at the fragment level rather than the bit level. Each fragment is embedded multiple times across different domains or image regions according to a predefined distribution policy.
+%	
+%	The redundancy level is configurable and directly impacts robustness and payload capacity.
+%	
+%	\section{Multi-Domain Embedding Strategy}
+%	To reduce vulnerability to specific attack types, fragments are embedded across multiple embedding domains, each offering resistance to different forms of degradation.
+%	
+%	\subsection{Spatial Domain Embedding}
+%	Fragments embedded in spatial texture regions are resilient to localized cropping and partial tampering. Texture-based masking is used to minimize visual distortion.
+%	
+%	\subsection{Frequency Domain Embedding}
+%	Mid-frequency DCT coefficients are used to embed fragments resistant to JPEG compression and moderate noise. Embedding strength is adjusted to balance imperceptibility and robustness.
+%	
+%	\subsection{Multi-Scale and Redundant Embedding}
+%	Selected fragments are embedded at different spatial resolutions or downsampled representations of the image to improve resilience against resizing operations.
+%	
+%	\subsection{Color Channel Utilization}
+%	For color images, redundancy is introduced across luminance and chrominance channels. Stronger embedding is applied to the luminance channel, while weaker redundant embedding is used in chrominance channels.
+%	
+%	\section{Embedding Control and Parameter Selection}
+%	This section describes the parameters governing embedding strength, fragment placement, and redundancy levels.
+%	
+%	\subsection{Key-Based Fragment Placement}
+%	A secret key is used to pseudo-randomly determine fragment locations and embedding domains, enhancing security and preventing unauthorized extraction.
+%	
+%	\subsection{Embedding Strength Adaptation}
+%	Embedding strength is adjusted based on local image characteristics, such as texture intensity and frequency stability.
+%	
+%	\section{Damage-Aware Extraction Process}
+%	Unlike traditional extraction schemes, the proposed framework does not assume intact data. Instead, it explicitly estimates damage and adapts the extraction process accordingly.
+%	
+%	\subsection{Fragment Detection and Validation}
+%	Extracted fragments are validated using checksums and structural consistency checks. Invalid or severely corrupted fragments are discarded or assigned low confidence.
+%	
+%	\subsection{Confidence Scoring Mechanism}
+%	Each fragment is assigned a confidence score based on extraction quality, consistency with neighboring fragments, and agreement with relational information.
+%	
+%	\subsection{Adaptive Fragment Selection}
+%	Fragments with higher confidence scores are prioritized during reconstruction. Lower-confidence fragments are used only when necessary.
+%	
+%	\section{Message Reconstruction and Self-Recovery}
+%	The final message is reconstructed using surviving fragments and their encoded relationships.
+%	
+%	\subsection{Partial Reconstruction Strategy}
+%	Missing fragments are reconstructed using relational summaries and redundancy information provided by neighboring fragments.
+%	
+%	\subsection{Failure Conditions}
+%	This section defines conditions under which full or partial recovery is not possible, such as excessive data loss or severe compound attacks.
+%	
+%	\section{Computational Complexity and Practical Considerations}
+%	The computational overhead of the proposed framework is analyzed in terms of embedding time, extraction time, and memory requirements.
+%	
+%	\subsection{Complexity Analysis}
+%	The complexity of payload structuring, embedding, and extraction is discussed qualitatively.
+%	
+%	\subsection{Implementation Constraints}
+%	Practical limitations related to image size, payload capacity, and real-world deployment are identified.
+%	
+%	\section{Summary of the Proposed Framework}
+%	This section summarizes the key design principles and highlights how the proposed framework addresses the research gaps identified in Chapter 2, particularly synchronization loss, partial data destruction, and robustness under compound attacks.
+%	
+%	
+%	% =========================
+%	
+%	\chapter{Implementation and Experimental Setup}
+%	\section{Development Environment}
+%	The tools and software environment used for implementation are described.
+%	
+%	\section{Dataset Description}
+%	The image datasets used for experimentation are presented.
+%	
+%	\section{Attack Simulation}
+%	This section describes how image degradation and tampering scenarios are simulated.
+%	
+%	\section{Evaluation Metrics}
+%	\subsection{Imperceptibility Metrics}
+%	PSNR and SSIM are introduced.
+%	
+%	\subsection{Robustness Metrics}
+%	Bit Error Rate (BER) and Normalized Correlation (NC) are defined.
+%	
+%	% =========================
+%	
+%	\chapter{Results and Discussion}
+%	\section{Imperceptibility Evaluation}
+%	Visual quality and distortion analysis are presented.
+%	
+%	\section{Robustness Under Image Degradation}
+%	Performance under compression, noise, and resizing is analyzed.
+%	
+%	\section{Robustness Under Partial Data Loss}
+%	The impact of cropping and localized tampering is evaluated.
+%	
+%	\section{Comparative Analysis}
+%	The proposed framework is compared with classical steganography methods.
+%	
+%	\section{Discussion of Results}
+%	Strengths, weaknesses, and observed trade-offs are discussed.
+%	
+%	% =========================
+%	
+%	\chapter{Conclusion and Future Work}
+%	\section{Summary of Findings}
+%	The main outcomes of the study are summarized.
+%	
+%	\section{Limitations}
+%	Practical and theoretical limitations of the framework are discussed.
+%	
+%	\section{Future Research Directions}
+%	Possible extensions and improvements are suggested.
 	
 	\bibliographystyle{unsrt}
 	\bibliography{references}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  5 MAR 2026 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  5 MAR 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -925,7 +925,7 @@ Package hyperref Info: Link coloring OFF on input line 28.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<university logo.jpg, id=384, 860.21375pt x 860.21375pt>
+<university logo.jpg, id=380, 860.21375pt x 860.21375pt>
 File: university logo.jpg Graphic file (type jpg)
 <use university logo.jpg>
 Package pdftex.def Info: university logo.jpg  used on input line 36.
@@ -1033,7 +1033,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 [9]
 Chapter 2.
-<triangle.png, id=644, 2071.74pt x 977.90344pt>
+<triangle.png, id=639, 2071.74pt x 977.90344pt>
 File: triangle.png Graphic file (type png)
 <use triangle.png>
 Package pdftex.def Info: triangle.png  used on input line 202.
@@ -1045,7 +1045,7 @@ Package pdftex.def Info: triangle.png  used on input line 202.
 ]
 
 [11 <./triangle.png (PNG copy)>]
-<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=663, 204.765pt x 116
+<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=658, 204.765pt x 116
 .8365pt>
 File: Frequency-regions-of-88-block-2D-DCT-coefficients.png Graphic file (type 
 png)
@@ -1056,7 +1056,7 @@ Package pdftex.def Info: Frequency-regions-of-88-block-2D-DCT-coefficients.png
 
 
 [12 <./Frequency-regions-of-88-block-2D-DCT-coefficients.png>]
-<DCT 8 blocks devision.png, id=671, 522.45187pt x 454.69875pt>
+<DCT 8 blocks devision.png, id=666, 522.45187pt x 454.69875pt>
 File: DCT 8 blocks devision.png Graphic file (type png)
 <use DCT 8 blocks devision.png>
 Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 309.
@@ -1064,7 +1064,7 @@ Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 309.
 
 
 [13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
-<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=684, 214.8025pt x 218.
+<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=679, 214.8025pt x 218.
 8175pt>
 File: DC-and-AC-coefficient-on-DCT-Transformation (1).png Graphic file (type pn
 g)
@@ -1075,7 +1075,7 @@ sed on input line 354.
 
 
 [14 <./DCT 8 blocks devision.png>]
-<dct embeding process.png, id=696, 770.88pt x 437.38406pt>
+<dct embeding process.png, id=691, 770.88pt x 437.38406pt>
 File: dct embeding process.png Graphic file (type png)
 <use dct embeding process.png>
 Package pdftex.def Info: dct embeding process.png  used on input line 373.
@@ -1087,7 +1087,7 @@ cess.png (PNG copy)>]
 
 [16]
 <The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wavelet
-.png, id=717, 831.105pt x 334.24875pt>
+.png, id=712, 831.105pt x 334.24875pt>
 File: The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wa
 velet.png Graphic file (type png)
 <use The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wav
@@ -1095,7 +1095,7 @@ elet.png>
 Package pdftex.def Info: The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-a
 nd-HH-by-1-level-wavelet.png  used on input line 443.
 (pdftex.def)             Requested size: 307.2929pt x 123.58339pt.
-<dwt decomposition.png, id=718, 1413.28pt x 770.88pt>
+<dwt decomposition.png, id=713, 1413.28pt x 770.88pt>
 File: dwt decomposition.png Graphic file (type png)
 <use dwt decomposition.png>
 Package pdftex.def Info: dwt decomposition.png  used on input line 452.
@@ -1106,7 +1106,7 @@ Package pdftex.def Info: dwt decomposition.png  used on input line 452.
 avelet.png> <./dwt decomposition.png (PNG copy)>]
 
 [18]
-<figure_2Z_dft.png, id=750, 640.2465pt x 618.894pt>
+<figure_2Z_dft.png, id=745, 640.2465pt x 618.894pt>
 File: figure_2Z_dft.png Graphic file (type png)
 <use figure_2Z_dft.png>
 Package pdftex.def Info: figure_2Z_dft.png  used on input line 571.
@@ -1114,7 +1114,7 @@ Package pdftex.def Info: figure_2Z_dft.png  used on input line 571.
 
 
 [19]
-<dft_magnitude_spectrum.png, id=764, 759.91905pt x 367.8543pt>
+<dft_magnitude_spectrum.png, id=759, 759.91905pt x 367.8543pt>
 File: dft_magnitude_spectrum.png Graphic file (type png)
 <use dft_magnitude_spectrum.png>
 Package pdftex.def Info: dft_magnitude_spectrum.png  used on input line 613.
@@ -1441,7 +1441,7 @@ if-i-cant progress in the field of im-age steganog-
 [37]
 
 [38]
-<Comparison.png, id=1041, 2826.56pt x 1541.76pt>
+<Comparison.png, id=1036, 2826.56pt x 1541.76pt>
 File: Comparison.png Graphic file (type png)
 <use Comparison.png>
 Package pdftex.def Info: Comparison.png  used on input line 2126.
@@ -1496,93 +1496,255 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 2388.
 
 [49]
 
-[50]
+LaTeX Warning: Reference `eq:prr' on page 50 undefined on input line 3061.
+
+
+
+[50] (./main.bbl
 
 [51]
-
-[52]
-Chapter 3.
-
-
-[53
-
-]
-
-[54]
-
-[55]
-Overfull \hbox (6.92679pt too wide) in paragraph at lines 3194--3194
-|[]\T1/lmr/bx/n/17.28 Computational Com-plex-ity and Prac-ti-cal Con-sid-er-a-t
-ions| 
- []
-
-
-
-[56]
-
-[57]
-Chapter 4.
-
-
-[58
-
-]
-Chapter 5.
-
-
-[59
-
-]
-Chapter 6.
-(./main.bbl
-
-[60
-
-]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 0.
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[61
+[52
 
 ]
 
-[62])
+[53])
 
-[63] (./main.aux)
+[54] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3505ED2D3D01A02C095DF59AE30A54A6;21457.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: ED5A27E4429C4FFDA346F39E502509B7;21245
+(rerunfilecheck)             After:  0A6BBBCFA875D09020CB0347E8CC7917;11728.
  ) 
 Here is how much of TeX's memory you used:
- 34226 strings out of 475178
- 792901 string characters out of 5766539
- 1291313 words of memory out of 5000000
- 56323 multiletter control sequences out of 15000+600000
+ 34213 strings out of 475178
+ 792779 string characters out of 5766539
+ 1291193 words of memory out of 5000000
+ 56321 multiletter control sequences out of 15000+600000
  668985 words of font info for 102 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,19n,91p,904b,2320s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (64 pages, 16566083 bytes).
+
+pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.4.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.4.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.9.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.9.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.9} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.8.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.8.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.8} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.7.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.7.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.7.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.7} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.6} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.5.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.5} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (55 pages, 16554482 bytes).
 PDF statistics:
- 1397 PDF objects out of 1440 (max. 8388607)
- 1253 compressed objects within 13 object streams
- 318 named destinations out of 1000 (max. 500000)
- 820 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1352 PDF objects out of 1440 (max. 8388607)
+ 1217 compressed objects within 13 object streams
+ 307 named destinations out of 1000 (max. 500000)
+ 812 words of extra memory for PDF output out of 10000 (max. 10000000)
 
